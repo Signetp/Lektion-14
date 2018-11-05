@@ -47,18 +47,15 @@ public class GroceryInventory {
         System.out.println(inventory.printInventory());
 
         System.out.println(" the list is sorted by the names length ");
-         for (Product p : inventory.sortedByNameLength()) {
+        for (Product p : inventory.sortedByNameLength()) {
             System.out.println(p);
         }
-         
-         System.out.println(" ");
-         System.out.println(" The list is sorted by price ");
+
+        System.out.println(" ");
+        System.out.println(" The list is sorted by price ");
         for (Product p : inventory.sortedByPrice()) {
             System.out.println(p);
         }
-       
-        
-        
     }
 
     private static FoodProduct foodProductCreator(String name, double price, long expOffsetMs, int temp) throws ExpiredProductAddedException {
